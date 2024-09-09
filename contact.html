@@ -295,24 +295,27 @@
         
         <!-- JavaScript Libraries -->
          <script>
-            function sendMessage() {
-    // Capture form data
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const project = document.getElementById('project').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+           function sendMessage() {
+            // Capture form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const project = document.getElementById('project').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
 
-    // Format message for WhatsApp
-    const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AProject: ${project}%0ASubject: ${subject}%0AMessage: ${message}`;
+            // Format message for WhatsApp
+            const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AProject: ${project}%0ASubject: ${subject}%0AMessage: ${message}`;
 
-    // WhatsApp URL
-    const whatsappURL = `https://wa.me/2347068017499?text=${whatsappMessage}`;
+            // WhatsApp URL
+            const whatsappURL = `https://wa.me/2347068017499?text=${whatsappMessage}`;
 
-    // Redirect to WhatsApp
-    window.open(whatsappURL, '_blank');
-}
+            // Redirect to WhatsApp
+            window.open(whatsappURL, '_blank');
+
+            // Clear the form
+            document.getElementById('contactForm').reset();
+        }
 
 
          </script>
@@ -324,6 +327,8 @@
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="path/to/bootstrap.bundle.js"></script>
+
         
 
         <!-- Template Javascript -->
